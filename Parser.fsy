@@ -1,0 +1,10 @@
+%{
+%}
+%token EOF
+%token <int> INT
+%type <Ast.t> parse
+%start parse
+%%
+expr:
+    | INT {  Ast.Int $1 }
+parse: expr EOF { $1 }

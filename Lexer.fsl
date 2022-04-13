@@ -1,0 +1,10 @@
+{
+open FSharp.Text.Lexing
+open Parser
+
+let lexeme lexbuf = LexBuffer<_>.LexemeString lexbuf
+}
+
+rule tokenize = parse
+| ['0'-'9']+ { lexeme lexbuf |> int |> INT }
+| eof { EOF }

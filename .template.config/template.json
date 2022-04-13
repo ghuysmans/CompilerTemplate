@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Guillaume Huysmans <ghuysmans99@gmail.com>",
+  "classifications": [ "Console", "Boilerplate", "Compiler" ],
+  "name": "Compiler with lexer, parser and AST",
+  "tags": {
+    "language": "F#",
+    "type": "project"
+  },
+  "identity": "Guigui.Compiler",
+  "shortName": "compiler",
+  "sourceName": "Compiler",
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "string",
+      "replaces": "FrameworkParameter",
+      "defaultValue": "net6.0",
+      "displayName": "Framework"
+    }
+  },
+  "primaryOutputs": [
+    { "path": "Compiler.fsproj" },
+    { "path": "Ast.fs" },
+    { "path": "Lexer.fsl" },
+    { "path": "Parser.fsy" },
+    { "path": "Program.fs" }
+  ]
+}
