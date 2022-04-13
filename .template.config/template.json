@@ -26,5 +26,12 @@
     { "path": "Lexer.fsl" },
     { "path": "Parser.fsy" },
     { "path": "Program.fs" }
+  ],
+  "sources": [
+    {
+      "modifiers": [
+        { "exclude": [ "LICENSE" ] }
+      ]
+    }
   ]
 }
