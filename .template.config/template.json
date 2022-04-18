@@ -30,7 +30,7 @@
   "sources": [
     {
       "modifiers": [
-        { "exclude": [ "LICENSE" ] }
+        { "exclude": [ "LICENSE", ".git/**" ] }
       ]
     }
   ]
